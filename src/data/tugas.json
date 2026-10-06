@@ -1,6 +1,6 @@
 {
   "nama": "LSP-Smart",
-  "diperbaruiPada": "2026-10-05",
+  "diperbaruiPada": "2026-10-06",
   "tugas": [
     {
       "id": "uji-1-1",
@@ -68,8 +68,8 @@
       "jenis": "pengujian",
       "kategori": "Asesi",
       "tahapEstafet": 2,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "status": "selesai",
+      "catatan": "Tercatat lulus pada pengujian Estafet 2, 6 Oktober 2026. Alur 5 langkah terpadu APL.01 + APL.02 dan berkas profil tuntas diajukan.",
       "sumber": "Panduan audit per role · Task 2.3"
     },
     {
@@ -78,8 +78,8 @@
       "jenis": "pengujian",
       "kategori": "Asesi",
       "tahapEstafet": 2,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "status": "selesai",
+      "catatan": "Tercatat lulus pada pengujian Estafet 2, 6 Oktober 2026. Permohonan SUBMITTED dan masuk ke antrean verifikasi Admin.",
       "sumber": "Panduan audit per role · Task 2.4"
     },
     {
@@ -88,8 +88,8 @@
       "jenis": "pengujian",
       "kategori": "Admin LSP",
       "tahapEstafet": 3,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "status": "selesai",
+      "catatan": "Tercatat lulus pada pengujian Estafet 3, 6 Oktober 2026. Berkas asesi tampil di daftar permohonan masuk.",
       "sumber": "Panduan audit per role · Task 3.1"
     },
     {
@@ -98,8 +98,8 @@
       "jenis": "pengujian",
       "kategori": "Admin LSP",
       "tahapEstafet": 3,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "status": "selesai",
+      "catatan": "Tercatat lulus pada pengujian Estafet 3, 6 Oktober 2026. Dokumen KTP, ijazah, dan portofolio diverifikasi melalui secure stream.",
       "sumber": "Panduan audit per role · Task 3.2"
     },
     {
@@ -108,8 +108,8 @@
       "jenis": "pengujian",
       "kategori": "Admin LSP",
       "tahapEstafet": 3,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "status": "selesai",
+      "catatan": "Tercatat lulus pada pengujian Estafet 3, 6 Oktober 2026. Status berubah menjadi APPROVED dan snapshot skema dibekukan secara permanen (Audit Immutability).",
       "sumber": "Panduan audit per role · Task 3.3"
     },
     {
@@ -118,129 +118,89 @@
       "jenis": "pengujian",
       "kategori": "Admin LSP",
       "tahapEstafet": 3,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "status": "selesai",
+      "catatan": "Tercatat lulus pada pengujian Estafet 3, 6 Oktober 2026. Asesor Budi Santoso ditugaskan ke jadwal event asesi.",
       "sumber": "Panduan audit per role · Task 3.4"
     },
     {
       "id": "uji-4-1",
-      "judul": "Akses formulir asesmen mandiri",
+      "judul": "Login ke portal Asesor dan akses antrean penugasan",
       "jenis": "pengujian",
-      "kategori": "Asesi",
+      "kategori": "Asesor",
       "tahapEstafet": 4,
       "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 4.1"
+      "catatan": "Menunggu pelaksanaan uji Estafet 4: login asesor dan buka antrean penugasan asesi di /asesor/perencanaan.",
+      "sumber": "Panduan audit per role · Task 4.1 & 4.2"
     },
     {
       "id": "uji-4-2",
-      "judul": "Pengakuan mandiri per elemen dan KUK",
+      "judul": "Verifikasi bukti portofolio APL.02 (Kaidah VATM)",
       "jenis": "pengujian",
-      "kategori": "Asesi",
+      "kategori": "Asesor",
       "tahapEstafet": 4,
       "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 4.2"
-    },
-    {
-      "id": "uji-4-3",
-      "judul": "Unggah bukti portofolio",
-      "jenis": "pengujian",
-      "kategori": "Asesi",
-      "tahapEstafet": 4,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "catatan": "Menunggu pelaksanaan uji Estafet 4: verifikasi bukti portofolio asesi berdasarkan kaidah Valid, Asli, Terkini, Memadai.",
       "sumber": "Panduan audit per role · Task 4.3"
     },
     {
-      "id": "uji-4-4",
-      "judul": "Tanda tangan dan pengiriman asesmen mandiri",
+      "id": "uji-4-3",
+      "judul": "Penyusunan FR.MAPA.01 dan Rule Engine FR.MAPA.02",
       "jenis": "pengujian",
-      "kategori": "Asesi",
+      "kategori": "Asesor",
       "tahapEstafet": 4,
       "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "catatan": "Menunggu pelaksanaan uji Estafet 4: penentuan pendekatan asesmen dan pemetaan jalur uji (Jalur 1/2/3) beserta paket instrumen.",
+      "sumber": "Panduan audit per role · Task 4.4"
+    },
+    {
+      "id": "uji-4-4",
+      "judul": "Inisialisasi ruang uji asesmen dan co-signing FR.AK.01 Asesor",
+      "jenis": "pengujian",
+      "kategori": "Asesor",
+      "tahapEstafet": 4,
+      "status": "belum_selesai",
+      "catatan": "Menunggu pelaksanaan uji Estafet 4: inisialisasi asesmen aktif, penerbitan dokumen instrumen, dan penandatanganan awal FR.AK.01 oleh Asesor.",
       "sumber": "Panduan audit per role · Task 4.4"
     },
     {
       "id": "uji-5-1",
-      "judul": "Login ke portal Asesor",
+      "judul": "Penandatanganan persetujuan asesmen FR.AK.01 oleh Asesi",
       "jenis": "pengujian",
-      "kategori": "Asesor",
+      "kategori": "Asesi",
       "tahapEstafet": 5,
       "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "catatan": "Menunggu pelaksanaan uji Estafet 5: asesi memeriksa ruang uji /asesi/asesmen dan menandatangani lembar persetujuan FR.AK.01.",
       "sumber": "Panduan audit per role · Task 5.1"
     },
     {
       "id": "uji-5-2",
-      "judul": "Daftar perencanaan asesmen",
+      "judul": "Pelaksanaan uji kompetensi teknis (CBT / Praktik)",
       "jenis": "pengujian",
       "kategori": "Asesor",
       "tahapEstafet": 5,
       "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "catatan": "Menunggu pelaksanaan uji Estafet 5: pengerjaan tes tertulis FR.IA.05 / observasi demonstrasi FR.IA.01 dan penilaian instrumen.",
       "sumber": "Panduan audit per role · Task 5.2"
     },
     {
       "id": "uji-5-3",
-      "judul": "Verifikasi portofolio dengan kaidah VATM",
+      "judul": "Keputusan rekomendasi FR.AK.02 dan umpan balik FR.AK.03",
       "jenis": "pengujian",
       "kategori": "Asesor",
       "tahapEstafet": 5,
       "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "catatan": "Menunggu pelaksanaan uji Estafet 5: penetapan rekomendasi Kompeten (K) atau Belum Kompeten (BK) dan pengisian umpan balik asesi.",
       "sumber": "Panduan audit per role · Task 5.3"
     },
     {
       "id": "uji-5-4",
-      "judul": "Perencanaan FR.MAPA.01 dan FR.MAPA.02",
+      "judul": "Penyusunan dan unduh laporan pelaksanaan FR.AK.05",
       "jenis": "pengujian",
       "kategori": "Asesor",
       "tahapEstafet": 5,
       "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+      "catatan": "Menunggu pelaksanaan uji Estafet 5: rekapitulasi laporan pelaksanaan asesmen dan verifikasi unduh dokumen resmi PDF.",
       "sumber": "Panduan audit per role · Task 5.4"
-    },
-    {
-      "id": "uji-5-5",
-      "judul": "Persetujuan asesmen FR.AK.01",
-      "jenis": "pengujian",
-      "kategori": "Asesor",
-      "tahapEstafet": 5,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 5.5"
-    },
-    {
-      "id": "uji-5-6",
-      "judul": "Pelaksanaan uji dan penilaian instrumen",
-      "jenis": "pengujian",
-      "kategori": "Asesor",
-      "tahapEstafet": 5,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 5.6"
-    },
-    {
-      "id": "uji-5-7",
-      "judul": "Rekomendasi FR.AK.02 dan umpan balik FR.AK.03",
-      "jenis": "pengujian",
-      "kategori": "Asesor",
-      "tahapEstafet": 5,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 5.7"
-    },
-    {
-      "id": "uji-5-8",
-      "judul": "Unduh laporan pelaksanaan FR.AK.05",
-      "jenis": "pengujian",
-      "kategori": "Asesor",
-      "tahapEstafet": 5,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 5.8"
     },
     {
       "id": "uji-6-1",
