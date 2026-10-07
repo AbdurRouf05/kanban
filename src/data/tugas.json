@@ -1,525 +1,531 @@
 {
-  "nama": "LSP-Smart",
-  "diperbaruiPada": "2026-10-06",
-  "tugas": [
+  "defaultProyekId": "lsp-smart",
+  "proyek": [
     {
-      "id": "uji-1-1",
-      "judul": "Login ke portal Admin",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 1,
-      "status": "selesai",
-      "catatan": "Tercatat lulus pada pengujian Estafet 1, 5 Oktober 2026.",
-      "sumber": "Panduan audit per role · Task 1.1"
-    },
-    {
-      "id": "uji-1-2",
-      "judul": "Master skema sertifikasi",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 1,
-      "status": "selesai",
-      "catatan": "Tercatat lulus pada pengujian Estafet 1, 5 Oktober 2026.",
-      "sumber": "Panduan audit per role · Task 1.2"
-    },
-    {
-      "id": "uji-1-3",
-      "judul": "Profil LSP dan Tempat Uji Kompetensi",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 1,
-      "status": "selesai",
-      "catatan": "Tercatat lulus pada pengujian Estafet 1, 5 Oktober 2026.",
-      "sumber": "Panduan audit per role · Task 1.3"
-    },
-    {
-      "id": "uji-1-4",
-      "judul": "Jadwal event asesmen",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 1,
-      "status": "selesai",
-      "catatan": "Tercatat lulus pada pengujian Estafet 1, 5 Oktober 2026.",
-      "sumber": "Panduan audit per role · Task 1.4"
-    },
-    {
-      "id": "uji-2-1",
-      "judul": "Login ke portal Asesi",
-      "jenis": "pengujian",
-      "kategori": "Asesi",
-      "tahapEstafet": 2,
-      "status": "selesai",
-      "catatan": "Checklist langkah ini sudah ditandai selesai.",
-      "sumber": "Panduan audit per role · Task 2.1"
-    },
-    {
-      "id": "uji-2-2",
-      "judul": "Pemilihan skema dan jadwal asesmen",
-      "jenis": "pengujian",
-      "kategori": "Asesi",
-      "tahapEstafet": 2,
-      "status": "selesai",
-      "catatan": "Checklist langkah ini sudah ditandai selesai.",
-      "sumber": "Panduan audit per role · Task 2.2"
-    },
-    {
-      "id": "uji-2-3",
-      "judul": "Pengisian FR.APL.01 dan FR.APL.02",
-      "jenis": "pengujian",
-      "kategori": "Asesi",
-      "tahapEstafet": 2,
-      "status": "selesai",
-      "catatan": "Tercatat lulus pada pengujian Estafet 2, 6 Oktober 2026. Alur 5 langkah terpadu APL.01 + APL.02 dan berkas profil tuntas diajukan.",
-      "sumber": "Panduan audit per role · Task 2.3"
-    },
-    {
-      "id": "uji-2-4",
-      "judul": "Pengiriman permohonan sertifikasi",
-      "jenis": "pengujian",
-      "kategori": "Asesi",
-      "tahapEstafet": 2,
-      "status": "selesai",
-      "catatan": "Tercatat lulus pada pengujian Estafet 2, 6 Oktober 2026. Permohonan SUBMITTED dan masuk ke antrean verifikasi Admin.",
-      "sumber": "Panduan audit per role · Task 2.4"
-    },
-    {
-      "id": "uji-3-1",
-      "judul": "Antrean verifikasi pendaftaran",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 3,
-      "status": "selesai",
-      "catatan": "Tercatat lulus pada pengujian Estafet 3, 6 Oktober 2026. Berkas asesi tampil di daftar permohonan masuk.",
-      "sumber": "Panduan audit per role · Task 3.1"
-    },
-    {
-      "id": "uji-3-2",
-      "judul": "Peninjauan dokumen persyaratan",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 3,
-      "status": "selesai",
-      "catatan": "Tercatat lulus pada pengujian Estafet 3, 6 Oktober 2026. Dokumen KTP, ijazah, dan portofolio diverifikasi melalui secure stream.",
-      "sumber": "Panduan audit per role · Task 3.2"
-    },
-    {
-      "id": "uji-3-3",
-      "judul": "Persetujuan permohonan asesi",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 3,
-      "status": "selesai",
-      "catatan": "Tercatat lulus pada pengujian Estafet 3, 6 Oktober 2026. Status berubah menjadi APPROVED dan snapshot skema dibekukan secara permanen (Audit Immutability).",
-      "sumber": "Panduan audit per role · Task 3.3"
-    },
-    {
-      "id": "uji-3-4",
-      "judul": "Penugasan asesor ke event",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 3,
-      "status": "selesai",
-      "catatan": "Tercatat lulus pada pengujian Estafet 3, 6 Oktober 2026. Asesor Budi Santoso ditugaskan ke jadwal event asesi.",
-      "sumber": "Panduan audit per role · Task 3.4"
-    },
-    {
-      "id": "uji-4-1",
-      "judul": "Login ke portal Asesor dan akses antrean penugasan",
-      "jenis": "pengujian",
-      "kategori": "Asesor",
-      "tahapEstafet": 4,
-      "status": "belum_selesai",
-      "catatan": "Menunggu pelaksanaan uji Estafet 4: login asesor dan buka antrean penugasan asesi di /asesor/perencanaan.",
-      "sumber": "Panduan audit per role · Task 4.1 & 4.2"
-    },
-    {
-      "id": "uji-4-2",
-      "judul": "Verifikasi bukti portofolio APL.02 (Kaidah VATM)",
-      "jenis": "pengujian",
-      "kategori": "Asesor",
-      "tahapEstafet": 4,
-      "status": "belum_selesai",
-      "catatan": "Menunggu pelaksanaan uji Estafet 4: verifikasi bukti portofolio asesi berdasarkan kaidah Valid, Asli, Terkini, Memadai.",
-      "sumber": "Panduan audit per role · Task 4.3"
-    },
-    {
-      "id": "uji-4-3",
-      "judul": "Penyusunan FR.MAPA.01 dan Rule Engine FR.MAPA.02",
-      "jenis": "pengujian",
-      "kategori": "Asesor",
-      "tahapEstafet": 4,
-      "status": "belum_selesai",
-      "catatan": "Menunggu pelaksanaan uji Estafet 4: penentuan pendekatan asesmen dan pemetaan jalur uji (Jalur 1/2/3) beserta paket instrumen.",
-      "sumber": "Panduan audit per role · Task 4.4"
-    },
-    {
-      "id": "uji-4-4",
-      "judul": "Inisialisasi ruang uji asesmen dan co-signing FR.AK.01 Asesor",
-      "jenis": "pengujian",
-      "kategori": "Asesor",
-      "tahapEstafet": 4,
-      "status": "belum_selesai",
-      "catatan": "Menunggu pelaksanaan uji Estafet 4: inisialisasi asesmen aktif, penerbitan dokumen instrumen, dan penandatanganan awal FR.AK.01 oleh Asesor.",
-      "sumber": "Panduan audit per role · Task 4.4"
-    },
-    {
-      "id": "uji-5-1",
-      "judul": "Penandatanganan persetujuan asesmen FR.AK.01 oleh Asesi",
-      "jenis": "pengujian",
-      "kategori": "Asesi",
-      "tahapEstafet": 5,
-      "status": "belum_selesai",
-      "catatan": "Menunggu pelaksanaan uji Estafet 5: asesi memeriksa ruang uji /asesi/asesmen dan menandatangani lembar persetujuan FR.AK.01.",
-      "sumber": "Panduan audit per role · Task 5.1"
-    },
-    {
-      "id": "uji-5-2",
-      "judul": "Pelaksanaan uji kompetensi teknis (CBT / Praktik)",
-      "jenis": "pengujian",
-      "kategori": "Asesor",
-      "tahapEstafet": 5,
-      "status": "belum_selesai",
-      "catatan": "Menunggu pelaksanaan uji Estafet 5: pengerjaan tes tertulis FR.IA.05 / observasi demonstrasi FR.IA.01 dan penilaian instrumen.",
-      "sumber": "Panduan audit per role · Task 5.2"
-    },
-    {
-      "id": "uji-5-3",
-      "judul": "Keputusan rekomendasi FR.AK.02 dan umpan balik FR.AK.03",
-      "jenis": "pengujian",
-      "kategori": "Asesor",
-      "tahapEstafet": 5,
-      "status": "belum_selesai",
-      "catatan": "Menunggu pelaksanaan uji Estafet 5: penetapan rekomendasi Kompeten (K) atau Belum Kompeten (BK) dan pengisian umpan balik asesi.",
-      "sumber": "Panduan audit per role · Task 5.3"
-    },
-    {
-      "id": "uji-5-4",
-      "judul": "Penyusunan dan unduh laporan pelaksanaan FR.AK.05",
-      "jenis": "pengujian",
-      "kategori": "Asesor",
-      "tahapEstafet": 5,
-      "status": "belum_selesai",
-      "catatan": "Menunggu pelaksanaan uji Estafet 5: rekapitulasi laporan pelaksanaan asesmen dan verifikasi unduh dokumen resmi PDF.",
-      "sumber": "Panduan audit per role · Task 5.4"
-    },
-    {
-      "id": "uji-6-1",
-      "judul": "Akses portal Komite Teknis",
-      "jenis": "pengujian",
-      "kategori": "Komite Teknis",
-      "tahapEstafet": 6,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 6.1"
-    },
-    {
-      "id": "uji-6-2",
-      "judul": "Daftar agenda sidang pleno",
-      "jenis": "pengujian",
-      "kategori": "Komite Teknis",
-      "tahapEstafet": 6,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 6.2"
-    },
-    {
-      "id": "uji-6-3",
-      "judul": "Pembukaan sesi sidang pleno",
-      "jenis": "pengujian",
-      "kategori": "Komite Teknis",
-      "tahapEstafet": 6,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 6.3"
-    },
-    {
-      "id": "uji-6-4",
-      "judul": "Penetapan hasil kelulusan",
-      "jenis": "pengujian",
-      "kategori": "Komite Teknis",
-      "tahapEstafet": 6,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 6.4"
-    },
-    {
-      "id": "uji-6-5",
-      "judul": "Pengajuan berita acara kepada Ketua LSP",
-      "jenis": "pengujian",
-      "kategori": "Komite Teknis",
-      "tahapEstafet": 6,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 6.5"
-    },
-    {
-      "id": "uji-7-1",
-      "judul": "Akses portal Ketua LSP",
-      "jenis": "pengujian",
-      "kategori": "Ketua LSP",
-      "tahapEstafet": 7,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 7.1"
-    },
-    {
-      "id": "uji-7-2",
-      "judul": "Peninjauan berita acara pleno",
-      "jenis": "pengujian",
-      "kategori": "Ketua LSP",
-      "tahapEstafet": 7,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 7.2"
-    },
-    {
-      "id": "uji-7-3",
-      "judul": "Pengesahan dan unduh berita acara",
-      "jenis": "pengujian",
-      "kategori": "Ketua LSP",
-      "tahapEstafet": 7,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 7.3"
-    },
-    {
-      "id": "uji-8-1",
-      "judul": "Akses portal untuk penerbitan sertifikat",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 8,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 8.1"
-    },
-    {
-      "id": "uji-8-2",
-      "judul": "Buku registrasi sertifikat",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 8,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 8.2"
-    },
-    {
-      "id": "uji-8-3",
-      "judul": "Pencatatan nomor blanko BNSP",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 8,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 8.3"
-    },
-    {
-      "id": "uji-8-4",
-      "judul": "Pencetakan sertifikat",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 8,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 8.4"
-    },
-    {
-      "id": "uji-8-5",
-      "judul": "Pencatatan serah terima sertifikat",
-      "jenis": "pengujian",
-      "kategori": "Admin LSP",
-      "tahapEstafet": 8,
-      "status": "belum_selesai",
-      "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
-      "sumber": "Panduan audit per role · Task 8.5"
-    },
-    {
-      "id": "dev-1",
-      "judul": "Fondasi aplikasi dan lingkungan pengembangan",
-      "jenis": "pengembangan",
-      "kategori": "M1",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "README M1 · Task 1.2–1.6"
-    },
-    {
-      "id": "dev-2",
-      "judul": "Pengelolaan master skema dan unit kompetensi",
-      "jenis": "pengembangan",
-      "kategori": "M2",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "README M2 · Task 2.2"
-    },
-    {
-      "id": "dev-3",
-      "judul": "Impor skema dari Excel",
-      "jenis": "pengembangan",
-      "kategori": "M2",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "README M2 · Task 2.3"
-    },
-    {
-      "id": "dev-4",
-      "judul": "Pemetaan awal aturan instrumen",
-      "jenis": "pengembangan",
-      "kategori": "M2",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "README M2 · Task 2.4"
-    },
-    {
-      "id": "dev-5",
-      "judul": "Portal Admin dan manajemen pengguna",
-      "jenis": "pengembangan",
-      "kategori": "M3",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Sisa pekerjaan M3 · Bagian 2A"
-    },
-    {
-      "id": "dev-6",
-      "judul": "Dashboard Asesi dan katalog skema",
-      "jenis": "pengembangan",
-      "kategori": "M3",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Sisa pekerjaan M3 · Bagian 2B"
-    },
-    {
-      "id": "dev-7",
-      "judul": "Dashboard Asesor",
-      "jenis": "pengembangan",
-      "kategori": "M3",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Sisa pekerjaan M3 · Bagian 2C"
-    },
-    {
-      "id": "dev-8",
-      "judul": "Pendaftaran FR.APL.01 dan asesmen mandiri",
-      "jenis": "pengembangan",
-      "kategori": "M4",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M4 · Task 4.4.1–4.4.3"
-    },
-    {
-      "id": "dev-9",
-      "judul": "Pengelolaan bukti portofolio",
-      "jenis": "pengembangan",
-      "kategori": "M4",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M4 · Task 4.2.4"
-    },
-    {
-      "id": "dev-10",
-      "judul": "Verifikasi berkas oleh Admin LSP",
-      "jenis": "pengembangan",
-      "kategori": "M4",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M4 · Task 4.5.1–4.5.2"
-    },
-    {
-      "id": "dev-11",
-      "judul": "Snapshot skema saat pendaftaran disetujui",
-      "jenis": "pengembangan",
-      "kategori": "M4",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M4 · Task 4.3.1–4.3.2"
-    },
-    {
-      "id": "dev-12",
-      "judul": "Pemetaan instrumen berdasarkan MAPA.02",
-      "jenis": "pengembangan",
-      "kategori": "M5",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M5 · Task 5.2.2"
-    },
-    {
-      "id": "dev-13",
-      "judul": "Formulir pelaksanaan asesmen FR.IA",
-      "jenis": "pengembangan",
-      "kategori": "M5",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M5 · Bagian 5.4"
-    },
-    {
-      "id": "dev-14",
-      "judul": "Ujian tertulis dan penilaian jawaban",
-      "jenis": "pengembangan",
-      "kategori": "M5",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M5 · Task 5.3.1–5.3.2"
-    },
-    {
-      "id": "dev-15",
-      "judul": "Perencanaan dan ruang uji Asesor",
-      "jenis": "pengembangan",
-      "kategori": "M5",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M5 · Task 5.5.1–5.5.3"
-    },
-    {
-      "id": "dev-16",
-      "judul": "Rekaman keputusan FR.AK.02",
-      "jenis": "pengembangan",
-      "kategori": "M6",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M6 · Task 4"
-    },
-    {
-      "id": "dev-17",
-      "judul": "Umpan balik Asesi FR.AK.03",
-      "jenis": "pengembangan",
-      "kategori": "M6",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M6 · Task 5"
-    },
-    {
-      "id": "dev-18",
-      "judul": "Laporan pelaksanaan FR.AK.05",
-      "jenis": "pengembangan",
-      "kategori": "M6",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M6 · Task 6"
-    },
-    {
-      "id": "dev-19",
-      "judul": "Tanda tangan elektronik dan verifikasi dokumen",
-      "jenis": "pengembangan",
-      "kategori": "M6",
-      "status": "selesai",
-      "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
-      "sumber": "Pembagian task M6 · Task 3 dan 7"
-    },
-    {
-      "id": "dev-m7-konfirmasi",
-      "judul": "Konfirmasi status tinjauan, validasi, dan banding",
-      "jenis": "pengembangan",
-      "kategori": "M7",
-      "status": "belum_selesai",
-      "catatan": "Perlu konfirmasi: indeks milestone mencatat rencana, sedangkan dokumen rinci M7 mencatat selesai.",
-      "sumber": "Indeks developmentdocs dan README M7 · Status milestone"
-    },
-    {
-      "id": "dev-m7-deploy",
-      "judul": "Publikasi aplikasi LSP ke server produksi",
-      "jenis": "pengembangan",
-      "kategori": "M7",
-      "status": "belum_selesai",
-      "catatan": "Dokumen M7 mencatat persiapan deployment, belum publikasi aplikasi.",
-      "sumber": "README M7 · Bagian 1.4: tanpa live deployment"
+      "nama": "LSP-Smart",
+      "diperbaruiPada": "2026-10-06",
+      "tugas": [
+        {
+          "id": "uji-1-1",
+          "judul": "Login ke portal Admin",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 1,
+          "status": "selesai",
+          "catatan": "Tercatat lulus pada pengujian Estafet 1, 5 Oktober 2026.",
+          "sumber": "Panduan audit per role · Task 1.1"
+        },
+        {
+          "id": "uji-1-2",
+          "judul": "Master skema sertifikasi",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 1,
+          "status": "selesai",
+          "catatan": "Tercatat lulus pada pengujian Estafet 1, 5 Oktober 2026.",
+          "sumber": "Panduan audit per role · Task 1.2"
+        },
+        {
+          "id": "uji-1-3",
+          "judul": "Profil LSP dan Tempat Uji Kompetensi",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 1,
+          "status": "selesai",
+          "catatan": "Tercatat lulus pada pengujian Estafet 1, 5 Oktober 2026.",
+          "sumber": "Panduan audit per role · Task 1.3"
+        },
+        {
+          "id": "uji-1-4",
+          "judul": "Jadwal event asesmen",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 1,
+          "status": "selesai",
+          "catatan": "Tercatat lulus pada pengujian Estafet 1, 5 Oktober 2026.",
+          "sumber": "Panduan audit per role · Task 1.4"
+        },
+        {
+          "id": "uji-2-1",
+          "judul": "Login ke portal Asesi",
+          "jenis": "pengujian",
+          "kategori": "Asesi",
+          "tahapEstafet": 2,
+          "status": "selesai",
+          "catatan": "Checklist langkah ini sudah ditandai selesai.",
+          "sumber": "Panduan audit per role · Task 2.1"
+        },
+        {
+          "id": "uji-2-2",
+          "judul": "Pemilihan skema dan jadwal asesmen",
+          "jenis": "pengujian",
+          "kategori": "Asesi",
+          "tahapEstafet": 2,
+          "status": "selesai",
+          "catatan": "Checklist langkah ini sudah ditandai selesai.",
+          "sumber": "Panduan audit per role · Task 2.2"
+        },
+        {
+          "id": "uji-2-3",
+          "judul": "Pengisian FR.APL.01 dan FR.APL.02",
+          "jenis": "pengujian",
+          "kategori": "Asesi",
+          "tahapEstafet": 2,
+          "status": "selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 2.3"
+        },
+        {
+          "id": "uji-2-4",
+          "judul": "Pengiriman permohonan sertifikasi",
+          "jenis": "pengujian",
+          "kategori": "Asesi",
+          "tahapEstafet": 2,
+          "status": "selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 2.4"
+        },
+        {
+          "id": "uji-3-1",
+          "judul": "Antrean verifikasi pendaftaran",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 3,
+          "status": "selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 3.1"
+        },
+        {
+          "id": "uji-3-2",
+          "judul": "Peninjauan dokumen persyaratan",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 3,
+          "status": "selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 3.2"
+        },
+        {
+          "id": "uji-3-3",
+          "judul": "Persetujuan permohonan asesi",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 3,
+          "status": "selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 3.3"
+        },
+        {
+          "id": "uji-3-4",
+          "judul": "Penugasan asesor ke event",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 3,
+          "status": "selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 3.4"
+        },
+        {
+          "id": "uji-4-1",
+          "judul": "Login ke portal Asesor dan akses antrean penugasan",
+          "jenis": "pengujian",
+          "kategori": "Asesor",
+          "tahapEstafet": 4,
+          "status": "belum_selesai",
+          "catatan": "Menunggu pelaksanaan uji Estafet 4: login asesor dan buka antrean penugasan asesi di /asesor/perencanaan.",
+          "sumber": "Panduan audit per role · Task 4.1 & 4.2"
+        },
+        {
+          "id": "uji-4-2",
+          "judul": "Verifikasi bukti portofolio APL.02 (Kaidah VATM)",
+          "jenis": "pengujian",
+          "kategori": "Asesor",
+          "tahapEstafet": 4,
+          "status": "belum_selesai",
+          "catatan": "Menunggu pelaksanaan uji Estafet 4: verifikasi bukti portofolio asesi berdasarkan kaidah Valid, Asli, Terkini, Memadai.",
+          "sumber": "Panduan audit per role · Task 4.3"
+        },
+        {
+          "id": "uji-4-3",
+          "judul": "Penyusunan FR.MAPA.01 dan Rule Engine FR.MAPA.02",
+          "jenis": "pengujian",
+          "kategori": "Asesor",
+          "tahapEstafet": 4,
+          "status": "belum_selesai",
+          "catatan": "Menunggu pelaksanaan uji Estafet 4: penentuan pendekatan asesmen dan pemetaan jalur uji (Jalur 1/2/3) beserta paket instrumen.",
+          "sumber": "Panduan audit per role · Task 4.4"
+        },
+        {
+          "id": "uji-4-4",
+          "judul": "Inisialisasi ruang uji asesmen dan co-signing FR.AK.01 Asesor",
+          "jenis": "pengujian",
+          "kategori": "Asesor",
+          "tahapEstafet": 4,
+          "status": "belum_selesai",
+          "catatan": "Menunggu pelaksanaan uji Estafet 4: inisialisasi asesmen aktif, penerbitan dokumen instrumen, dan penandatanganan awal FR.AK.01 oleh Asesor.",
+          "sumber": "Panduan audit per role · Task 4.4"
+        },
+        {
+          "id": "uji-5-1",
+          "judul": "Penandatanganan persetujuan asesmen FR.AK.01 oleh Asesi",
+          "jenis": "pengujian",
+          "kategori": "Asesi",
+          "tahapEstafet": 5,
+          "status": "belum_selesai",
+          "catatan": "Menunggu pelaksanaan uji Estafet 5: asesi memeriksa ruang uji /asesi/asesmen dan menandatangani lembar persetujuan FR.AK.01.",
+          "sumber": "Panduan audit per role · Task 5.1"
+        },
+        {
+          "id": "uji-5-2",
+          "judul": "Pelaksanaan uji kompetensi teknis (CBT / Praktik)",
+          "jenis": "pengujian",
+          "kategori": "Asesor",
+          "tahapEstafet": 5,
+          "status": "belum_selesai",
+          "catatan": "Menunggu pelaksanaan uji Estafet 5: pengerjaan tes tertulis FR.IA.05 / observasi demonstrasi FR.IA.01 dan penilaian instrumen.",
+          "sumber": "Panduan audit per role · Task 5.2"
+        },
+        {
+          "id": "uji-5-3",
+          "judul": "Keputusan rekomendasi FR.AK.02 dan umpan balik FR.AK.03",
+          "jenis": "pengujian",
+          "kategori": "Asesor",
+          "tahapEstafet": 5,
+          "status": "belum_selesai",
+          "catatan": "Menunggu pelaksanaan uji Estafet 5: penetapan rekomendasi Kompeten (K) atau Belum Kompeten (BK) dan pengisian umpan balik asesi.",
+          "sumber": "Panduan audit per role · Task 5.3"
+        },
+        {
+          "id": "uji-5-4",
+          "judul": "Penyusunan dan unduh laporan pelaksanaan FR.AK.05",
+          "jenis": "pengujian",
+          "kategori": "Asesor",
+          "tahapEstafet": 5,
+          "status": "belum_selesai",
+          "catatan": "Menunggu pelaksanaan uji Estafet 5: rekapitulasi laporan pelaksanaan asesmen dan verifikasi unduh dokumen resmi PDF.",
+          "sumber": "Panduan audit per role · Task 5.4"
+        },
+        {
+          "id": "uji-6-1",
+          "judul": "Akses portal Komite Teknis",
+          "jenis": "pengujian",
+          "kategori": "Komite Teknis",
+          "tahapEstafet": 6,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 6.1"
+        },
+        {
+          "id": "uji-6-2",
+          "judul": "Daftar agenda sidang pleno",
+          "jenis": "pengujian",
+          "kategori": "Komite Teknis",
+          "tahapEstafet": 6,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 6.2"
+        },
+        {
+          "id": "uji-6-3",
+          "judul": "Pembukaan sesi sidang pleno",
+          "jenis": "pengujian",
+          "kategori": "Komite Teknis",
+          "tahapEstafet": 6,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 6.3"
+        },
+        {
+          "id": "uji-6-4",
+          "judul": "Penetapan hasil kelulusan",
+          "jenis": "pengujian",
+          "kategori": "Komite Teknis",
+          "tahapEstafet": 6,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 6.4"
+        },
+        {
+          "id": "uji-6-5",
+          "judul": "Pengajuan berita acara kepada Ketua LSP",
+          "jenis": "pengujian",
+          "kategori": "Komite Teknis",
+          "tahapEstafet": 6,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 6.5"
+        },
+        {
+          "id": "uji-7-1",
+          "judul": "Akses portal Ketua LSP",
+          "jenis": "pengujian",
+          "kategori": "Ketua LSP",
+          "tahapEstafet": 7,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 7.1"
+        },
+        {
+          "id": "uji-7-2",
+          "judul": "Peninjauan berita acara pleno",
+          "jenis": "pengujian",
+          "kategori": "Ketua LSP",
+          "tahapEstafet": 7,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 7.2"
+        },
+        {
+          "id": "uji-7-3",
+          "judul": "Pengesahan dan unduh berita acara",
+          "jenis": "pengujian",
+          "kategori": "Ketua LSP",
+          "tahapEstafet": 7,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 7.3"
+        },
+        {
+          "id": "uji-8-1",
+          "judul": "Akses portal untuk penerbitan sertifikat",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 8,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 8.1"
+        },
+        {
+          "id": "uji-8-2",
+          "judul": "Buku registrasi sertifikat",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 8,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 8.2"
+        },
+        {
+          "id": "uji-8-3",
+          "judul": "Pencatatan nomor blanko BNSP",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 8,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 8.3"
+        },
+        {
+          "id": "uji-8-4",
+          "judul": "Pencetakan sertifikat",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 8,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 8.4"
+        },
+        {
+          "id": "uji-8-5",
+          "judul": "Pencatatan serah terima sertifikat",
+          "jenis": "pengujian",
+          "kategori": "Admin LSP",
+          "tahapEstafet": 8,
+          "status": "belum_selesai",
+          "catatan": "Menunggu penyelesaian dan pencatatan hasil uji.",
+          "sumber": "Panduan audit per role · Task 8.5"
+        },
+        {
+          "id": "dev-1",
+          "judul": "Fondasi aplikasi dan lingkungan pengembangan",
+          "jenis": "pengembangan",
+          "kategori": "M1",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "README M1 · Task 1.2–1.6"
+        },
+        {
+          "id": "dev-2",
+          "judul": "Pengelolaan master skema dan unit kompetensi",
+          "jenis": "pengembangan",
+          "kategori": "M2",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "README M2 · Task 2.2"
+        },
+        {
+          "id": "dev-3",
+          "judul": "Impor skema dari Excel",
+          "jenis": "pengembangan",
+          "kategori": "M2",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "README M2 · Task 2.3"
+        },
+        {
+          "id": "dev-4",
+          "judul": "Pemetaan awal aturan instrumen",
+          "jenis": "pengembangan",
+          "kategori": "M2",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "README M2 · Task 2.4"
+        },
+        {
+          "id": "dev-5",
+          "judul": "Portal Admin dan manajemen pengguna",
+          "jenis": "pengembangan",
+          "kategori": "M3",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Sisa pekerjaan M3 · Bagian 2A"
+        },
+        {
+          "id": "dev-6",
+          "judul": "Dashboard Asesi dan katalog skema",
+          "jenis": "pengembangan",
+          "kategori": "M3",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Sisa pekerjaan M3 · Bagian 2B"
+        },
+        {
+          "id": "dev-7",
+          "judul": "Dashboard Asesor",
+          "jenis": "pengembangan",
+          "kategori": "M3",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Sisa pekerjaan M3 · Bagian 2C"
+        },
+        {
+          "id": "dev-8",
+          "judul": "Pendaftaran FR.APL.01 dan asesmen mandiri",
+          "jenis": "pengembangan",
+          "kategori": "M4",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M4 · Task 4.4.1–4.4.3"
+        },
+        {
+          "id": "dev-9",
+          "judul": "Pengelolaan bukti portofolio",
+          "jenis": "pengembangan",
+          "kategori": "M4",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M4 · Task 4.2.4"
+        },
+        {
+          "id": "dev-10",
+          "judul": "Verifikasi berkas oleh Admin LSP",
+          "jenis": "pengembangan",
+          "kategori": "M4",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M4 · Task 4.5.1–4.5.2"
+        },
+        {
+          "id": "dev-11",
+          "judul": "Snapshot skema saat pendaftaran disetujui",
+          "jenis": "pengembangan",
+          "kategori": "M4",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M4 · Task 4.3.1–4.3.2"
+        },
+        {
+          "id": "dev-12",
+          "judul": "Pemetaan instrumen berdasarkan MAPA.02",
+          "jenis": "pengembangan",
+          "kategori": "M5",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M5 · Task 5.2.2"
+        },
+        {
+          "id": "dev-13",
+          "judul": "Formulir pelaksanaan asesmen FR.IA",
+          "jenis": "pengembangan",
+          "kategori": "M5",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M5 · Bagian 5.4"
+        },
+        {
+          "id": "dev-14",
+          "judul": "Ujian tertulis dan penilaian jawaban",
+          "jenis": "pengembangan",
+          "kategori": "M5",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M5 · Task 5.3.1–5.3.2"
+        },
+        {
+          "id": "dev-15",
+          "judul": "Perencanaan dan ruang uji Asesor",
+          "jenis": "pengembangan",
+          "kategori": "M5",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M5 · Task 5.5.1–5.5.3"
+        },
+        {
+          "id": "dev-16",
+          "judul": "Rekaman keputusan FR.AK.02",
+          "jenis": "pengembangan",
+          "kategori": "M6",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M6 · Task 4"
+        },
+        {
+          "id": "dev-17",
+          "judul": "Umpan balik Asesi FR.AK.03",
+          "jenis": "pengembangan",
+          "kategori": "M6",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M6 · Task 5"
+        },
+        {
+          "id": "dev-18",
+          "judul": "Laporan pelaksanaan FR.AK.05",
+          "jenis": "pengembangan",
+          "kategori": "M6",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M6 · Task 6"
+        },
+        {
+          "id": "dev-19",
+          "judul": "Tanda tangan elektronik dan verifikasi dokumen",
+          "jenis": "pengembangan",
+          "kategori": "M6",
+          "status": "selesai",
+          "catatan": "Implementasi tercatat selesai. Hasil uji alur tersedia di tab Pengujian.",
+          "sumber": "Pembagian task M6 · Task 3 dan 7"
+        },
+        {
+          "id": "dev-m7-konfirmasi",
+          "judul": "Konfirmasi status tinjauan, validasi, dan banding",
+          "jenis": "pengembangan",
+          "kategori": "M7",
+          "status": "belum_selesai",
+          "catatan": "Perlu konfirmasi: indeks milestone mencatat rencana, sedangkan dokumen rinci M7 mencatat selesai.",
+          "sumber": "Indeks developmentdocs dan README M7 · Status milestone"
+        },
+        {
+          "id": "dev-m7-deploy",
+          "judul": "Publikasi aplikasi LSP ke server produksi",
+          "jenis": "pengembangan",
+          "kategori": "M7",
+          "status": "belum_selesai",
+          "catatan": "Dokumen M7 mencatat persiapan deployment, belum publikasi aplikasi.",
+          "sumber": "README M7 · Bagian 1.4: tanpa live deployment"
+        }
+      ],
+      "id": "lsp-smart"
     }
   ]
 }

@@ -10,7 +10,7 @@ type Tugas = {
 type Proyek = { id: string; nama: string; diperbaruiPada: string; tugas: Tugas[] };
 type Workspace = { defaultProyekId: string; proyek: Proyek[] };
 type Editor = { tipe: "tugas"; tugas?: Tugas; status: string } | { tipe: "proyek"; baru: boolean };
-const STORAGE_KEY = "monitoring-proyek.workspace.v1";
+const STORAGE_KEY = "monitoring-proyek.workspace.v2";
 const kolom = [
   { id: "belum_selesai", nama: "Belum selesai", simbol: "○" },
   { id: "dikerjakan", nama: "Dikerjakan", simbol: "◐" },
@@ -48,18 +48,50 @@ export default function Papan({ data }: { data: Workspace }) {
 
   useEffect(() => {
     try {
+      // Hapus cache versi lama jika ada
+      localStorage.removeItem("monitoring-proyek.workspace.v1");
+
       const raw = localStorage.getItem(STORAGE_KEY);
       if (raw) {
         const tersimpan = JSON.parse(raw);
-        const hasil = validasiWorkspace(tersimpan.workspace) as Workspace;
-        setWorkspace(hasil);
-        setProyekId(hasil.defaultProyekId);
-        setJenis(hasil.proyek.find((item) => item.id === hasil.defaultProyekId)?.tugas.some((item) => item.jenis === "pengujian") ? "pengujian" : "pengembangan");
-        if (tersimpan.basis !== JSON.stringify(data)) setPesan("Memakai edit lokal. Versi data dari push telah berubah; ekspor edit lokal sebelum beralih perangkat.");
+        // Jika data repositori hasil git push berbeda dengan basis lokal, langsung prioritaskan data push terbaru!
+        if (tersimpan.basis !== JSON.stringify(data)) {
+          localStorage.removeItem(STORAGE_KEY);
+          setWorkspace(data);
+          setProyekId(data.defaultProyekId);
+          setJenis(data.proyek.find((item) => item.id === data.defaultProyekId)?.tugas.some((item) => item.jenis === "pengujian") ? "pengujian" : "pengembangan");
+          setPesan("");
+        } else {
+          const hasil = validasiWorkspace(tersimpan.workspace) as Workspace;
+          setWorkspace(hasil);
+          setProyekId(hasil.defaultProyekId);
+          setJenis(hasil.proyek.find((item) => item.id === hasil.defaultProyekId)?.tugas.some((item) => item.jenis === "pengujian") ? "pengujian" : "pengembangan");
+        }
+      } else {
+        setWorkspace(data);
+        setProyekId(data.defaultProyekId);
+        setJenis(data.proyek.find((item) => item.id === data.defaultProyekId)?.tugas.some((item) => item.jenis === "pengujian") ? "pengujian" : "pengembangan");
       }
-    } catch { setError("Data lokal tidak dapat dibaca. Menampilkan data bawaan proyek."); }
+    } catch {
+      try { localStorage.removeItem(STORAGE_KEY); } catch {}
+      setWorkspace(data);
+      setProyekId(data.defaultProyekId);
+      setJenis(data.proyek.find((item) => item.id === data.defaultProyekId)?.tugas.some((item) => item.jenis === "pengujian") ? "pengujian" : "pengembangan");
+    }
     setIsReady(true);
   }, [data]);
+
+  function sinkronkanKePush() {
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem("monitoring-proyek.workspace.v1");
+    } catch {}
+    setWorkspace(data);
+    setProyekId(data.defaultProyekId);
+    setJenis(data.proyek.find((item) => item.id === data.defaultProyekId)?.tugas.some((item) => item.jenis === "pengujian") ? "pengujian" : "pengembangan");
+    setError("");
+    setPesan("Data berhasil disinkronkan langsung ke versi push repositori terbaru.");
+  }
 
   function simpan(hasil: Workspace) {
     if (!isDeveloper) return;
@@ -145,7 +177,11 @@ export default function Papan({ data }: { data: Workspace }) {
     <a className="skip-link" href="#papan">Lewati ke papan tugas</a>
     <header className="topbar">
       <button className="brand-context" type="button" onClick={bukaDeveloper}>Monitoring proyek</button>
-      <div className="header-actions"><span className="access-label">{isDeveloper ? "Mode developer" : "Hanya baca"}</span>{isDeveloper && <button type="button" onClick={() => { setIsDeveloper(false); setEditor(null); setPesan(""); }}>Selesai mengedit</button>}</div>
+      <div className="header-actions">
+        <button type="button" onClick={sinkronkanKePush} title="Muat ulang versi data resmi dari repositori">🔄 Sinkronkan Data Push</button>
+        <span className="access-label">{isDeveloper ? "Mode developer" : "Hanya baca"}</span>
+        {isDeveloper && <button type="button" onClick={() => { setIsDeveloper(false); setEditor(null); setPesan(""); }}>Selesai mengedit</button>}
+      </div>
     </header>
     <main>
       <section className="project-row" aria-label="Proyek aktif">
@@ -158,7 +194,11 @@ export default function Papan({ data }: { data: Workspace }) {
         <span>Edit lokal di browser · Ekspor untuk push</span>
       </section>}
       {error && <p className="notice error" role="alert">{error}</p>}
-      {pesan && <div className="notice" role="status"><span>{pesan}</span><button type="button" aria-label="Tutup pesan" onClick={() => setPesan("")}>×</button></div>}
+      {pesan && <div className="notice" role="status">
+        <span>{pesan}</span>
+        <button type="button" onClick={sinkronkanKePush} style={{ marginLeft: "8px", textDecoration: "underline", background: "none", border: "none", color: "inherit", cursor: "pointer", fontWeight: "bold" }}>Gunakan Data Push</button>
+        <button type="button" aria-label="Tutup pesan" onClick={() => setPesan("")}>×</button>
+      </div>}
       <section className="toolbar" aria-label="Filter tugas">
         <div className="view-switch" role="group" aria-label="Jenis tugas">{["pengujian", "pengembangan"].map((value) => <button key={value} type="button" aria-pressed={jenis === value} onClick={() => { setJenis(value); resetFilter(); }}>{value === "pengujian" ? "Pengujian" : "Pengembangan"}<span>{proyek.tugas.filter((item) => item.jenis === value).length}</span></button>)}</div>
         <label className="search-field"><span className="sr-only">Cari tugas</span><input type="search" placeholder="Cari tugas..." value={pencarian} onChange={(e) => setPencarian(e.target.value)} /></label>
