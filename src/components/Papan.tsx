@@ -178,7 +178,7 @@ export default function Papan({ data }: { data: Workspace }) {
     <header className="topbar">
       <button className="brand-context" type="button" onClick={bukaDeveloper}>Monitoring proyek</button>
       <div className="header-actions">
-        <button type="button" onClick={sinkronkanKePush} title="Muat ulang versi data resmi dari repositori">🔄 Sinkronkan Data Push</button>
+        {isDeveloper && <button type="button" onClick={sinkronkanKePush} title="Muat ulang versi data resmi dari repositori">🔄 Sinkronkan Data Push</button>}
         <span className="access-label">{isDeveloper ? "Mode developer" : "Hanya baca"}</span>
         {isDeveloper && <button type="button" onClick={() => { setIsDeveloper(false); setEditor(null); setPesan(""); }}>Selesai mengedit</button>}
       </div>
@@ -196,7 +196,7 @@ export default function Papan({ data }: { data: Workspace }) {
       {error && <p className="notice error" role="alert">{error}</p>}
       {pesan && <div className="notice" role="status">
         <span>{pesan}</span>
-        <button type="button" onClick={sinkronkanKePush} style={{ marginLeft: "8px", textDecoration: "underline", background: "none", border: "none", color: "inherit", cursor: "pointer", fontWeight: "bold" }}>Gunakan Data Push</button>
+        {isDeveloper && <button type="button" onClick={sinkronkanKePush} style={{ marginLeft: "8px", textDecoration: "underline", background: "none", border: "none", color: "inherit", cursor: "pointer", fontWeight: "bold" }}>Gunakan Data Push</button>}
         <button type="button" aria-label="Tutup pesan" onClick={() => setPesan("")}>×</button>
       </div>}
       <section className="toolbar" aria-label="Filter tugas">
