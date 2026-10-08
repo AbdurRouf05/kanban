@@ -263,7 +263,7 @@
           "jenis": "pengembangan",
           "kategori": "M9",
           "status": "dikerjakan",
-          "catatan": "Tahap perencanaan: urutan kerja pembuatan skema, cek kelengkapan, dan validasi sebelum jadwal dibuka.",
+          "catatan": "Riset selesai: alur mengikuti Pedoman BNSP 210 (Komite Skema, pengesahan Ketua LSP, verifikasi BNSP). Berikutnya panel kesiapan skema, templat MUK, dan tempel teks SKKNI.",
           "sumber": "docs2/RENCANA_SKEMA_KEAMANAN_DAN_KINERJA.md"
         },
         {
@@ -272,7 +272,7 @@
           "jenis": "pengembangan",
           "kategori": "M9",
           "status": "dikerjakan",
-          "catatan": "Fase 1 selesai: spesimen tanda tangan tidak lagi publik dan token di URL hanya membuka berkas. Berikutnya segel hash per tanda tangan, PIN, arsip PDF beku, QR verifikasi, dan PDF per peran.",
+          "catatan": "Selesai: PIN tanda tangan pejabat, segel SHA-256 dengan pengecekan keutuhan, QR verifikasi di PDF, jejak IP penanda tangan. Berikutnya arsip PDF beku dan PDF per peran.",
           "sumber": "docs2/RENCANA_SKEMA_KEAMANAN_DAN_KINERJA.md"
         },
         {
@@ -283,6 +283,15 @@
           "status": "dikerjakan",
           "catatan": "Fase 1 selesai: batas tebakan kata sandi, hitungan dasbor ringan, daftar pendaftaran tanpa snapshot, indeks log alur. Berikutnya paginasi, cache klien, enkripsi berkas pribadi, rotasi refresh token.",
           "sumber": "docs2/RENCANA_SKEMA_KEAMANAN_DAN_KINERJA.md"
+        },
+        {
+          "id": "dev-31",
+          "judul": "README, panduan VPS, dan perbaikan konfigurasi S3 produksi",
+          "jenis": "pengembangan",
+          "kategori": "M9",
+          "status": "selesai",
+          "catatan": "Panduan setup lokal, konvensi penamaan, dan pemasangan VPS (Docker, PostgreSQL, Redis, S3/MinIO, Nginx, HTTPS, backup). Bug nama variabel S3 diperbaiki dan bucket dibuat otomatis.",
+          "sumber": "README.md"
         },
         {
           "id": "dev-m7-deploy",
