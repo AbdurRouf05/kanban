@@ -294,6 +294,24 @@
           "sumber": "README.md"
         },
         {
+          "id": "dev-32",
+          "judul": "Aspek kritis terhubung ke KUK pada penilaian",
+          "jenis": "pengembangan",
+          "kategori": "M9",
+          "status": "selesai",
+          "catatan": "KUK aspek kritis ditandai di FR.IA.01; rekomendasi K ditolak bila aspek kritis dinilai Tidak.",
+          "sumber": "docs2/TODO_PROGRES.md"
+        },
+        {
+          "id": "dev-33",
+          "judul": "Input skema asli dari dokumen skema dan SKKNI",
+          "jenis": "pengembangan",
+          "kategori": "M9",
+          "status": "belum_selesai",
+          "catatan": "Menunggu dokumen skema yang disahkan dan PDF SKKNI dari klien.",
+          "sumber": "docs2/TODO_PROGRES.md"
+        },
+        {
           "id": "dev-m7-deploy",
           "judul": "Publikasi aplikasi LSP ke server produksi",
           "jenis": "pengembangan",
