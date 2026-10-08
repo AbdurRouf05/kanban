@@ -36,7 +36,7 @@ Buka http://localhost:3006.
 3. Gunakan status `belum_selesai`, `dikerjakan`, atau `selesai`. Pengujian selesai harus mengikuti catatan hasil uji, bukan status implementasi.
 4. Commit data bersama dokumen, kemudian push melalui alur branch/PR repositori.
 
-Dokumen tidak diimpor otomatis. Website menampilkan data dari deployment terakhir yang berhasil. Tugas awal merupakan ringkasan dokumen, bukan audit ulang aplikasi. Kolom Dikerjakan kosong karena sumber belum mencatat tugas yang aktif secara eksplisit.
+Dokumen tidak diimpor otomatis. Website menampilkan data dari deployment terakhir yang berhasil. Tugas awal merupakan ringkasan dokumen, bukan audit ulang aplikasi. Kolom Dikerjakan berisi pekerjaan yang sedang direncanakan atau dibangun.
 
 Jangan masukkan kredensial, identitas asesi, atau isi audit internal ke data publik. `noindex` tidak membuat situs privat.
 

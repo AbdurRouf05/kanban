@@ -12,9 +12,9 @@ type Workspace = { defaultProyekId: string; proyek: Proyek[] };
 type Editor = { tipe: "tugas"; tugas?: Tugas; status: string } | { tipe: "proyek"; baru: boolean };
 const STORAGE_KEY = "monitoring-proyek.workspace.v2";
 const kolom = [
-  { id: "belum_selesai", nama: "Belum selesai", simbol: "○" },
-  { id: "dikerjakan", nama: "Dikerjakan", simbol: "◐" },
-  { id: "selesai", nama: "Selesai", simbol: "✓" },
+  { id: "belum_selesai", nama: "Belum selesai" },
+  { id: "dikerjakan", nama: "Dikerjakan" },
+  { id: "selesai", nama: "Selesai" },
 ];
 
 function hariIni() {
@@ -159,7 +159,7 @@ export default function Papan({ data }: { data: Workspace }) {
       sumber: teks("sumber") || "Catatan proyek",
     };
     const tahap = Number(teks("tahapEstafet"));
-    if (tugas.jenis === "pengujian" && tahap >= 1 && tahap <= 8) tugas.tahapEstafet = tahap;
+    if (tugas.jenis === "pengujian" && tahap >= 1 && tahap <= 10) tugas.tahapEstafet = tahap;
     else delete tugas.tahapEstafet;
     const daftar = editor.tugas ? proyek.tugas.map((item) => item.id === tugas.id ? tugas : item) : [...proyek.tugas, tugas];
     if (simpanProyek({ ...proyek, diperbaruiPada: hariIni(), tugas: daftar })) {
@@ -212,13 +212,13 @@ export default function Papan({ data }: { data: Workspace }) {
         {kolom.map((item) => {
           const daftar = tugas.filter((t) => t.status === item.id);
           return <section key={`${proyek.id}-${jenis}-${item.id}`} className={`column ${item.id} ${statusMobile === item.id ? "mobile-active" : ""}`} aria-labelledby={`kolom-${item.id}`}>
-            <div className="column-heading"><span className="status-mark" aria-hidden="true">{item.simbol}</span><h2 id={`kolom-${item.id}`}>{item.nama}</h2><span className="column-count">{daftar.length}</span>{isDeveloper && <button type="button" className="add-column" aria-label={`Tambah tugas ${item.nama.toLowerCase()}`} onClick={() => setEditor({ tipe: "tugas", status: item.id })}>+</button>}</div>
+            <div className="column-heading"><span className="status-mark" aria-hidden="true" /><h2 id={`kolom-${item.id}`}>{item.nama}</h2><span className="column-count">{daftar.length}</span>{isDeveloper && <button type="button" className="add-column" aria-label={`Tambah tugas ${item.nama.toLowerCase()}`} onClick={() => setEditor({ tipe: "tugas", status: item.id })}>+</button>}</div>
             <div className="task-list" tabIndex={0} role="region" aria-label={`Daftar ${item.nama.toLowerCase()}`}>
               {daftar.map((t) => <article className="task-card" key={t.id}>
                 <details><summary><span className="card-meta"><span className="category-tag">{t.kategori}</span>{t.tahapEstafet && <span>Estafet {t.tahapEstafet}</span>}<span className="expand-icon" aria-hidden="true">+</span></span><span className="task-title">{t.judul}</span></summary><div className="task-detail">{t.catatan && <p>{t.catatan}</p>}<p className="source">Sumber: {t.sumber}</p></div></details>
                 {isDeveloper && <div className="card-actions"><label><span className="sr-only">Status {t.judul}</span><select value={t.status} onChange={(e) => ubahStatus(t.id, e.target.value)}>{kolom.map((status) => <option key={status.id} value={status.id}>{status.nama}</option>)}</select></label><button type="button" aria-label={`Edit ${t.judul}`} onClick={() => setEditor({ tipe: "tugas", tugas: t, status: t.status })}>Edit</button></div>}
               </article>)}
-              {!daftar.length && <div className="empty-state"><span aria-hidden="true">{item.simbol}</span><h3>{isFiltered ? "Tidak ada hasil" : "Belum ada tugas"}</h3><p>{isFiltered ? "Coba pencarian atau kategori lain." : isDeveloper ? "Tambahkan tugas dengan tombol + di atas." : "Tugas akan muncul saat statusnya diperbarui."}</p></div>}
+              {!daftar.length && <div className="empty-state"><span aria-hidden="true" /><h3>{isFiltered ? "Tidak ada hasil" : "Belum ada tugas"}</h3><p>{isFiltered ? "Coba pencarian atau kategori lain." : isDeveloper ? "Tambahkan tugas dengan tombol + di atas." : "Tugas akan muncul saat statusnya diperbarui."}</p></div>}
             </div>
           </section>;
         })}
@@ -236,7 +236,7 @@ export default function Papan({ data }: { data: Workspace }) {
           <div className="form-row"><label>Jenis<select name="jenis" defaultValue={editor.tugas?.jenis ?? jenis}><option value="pengembangan">Pengembangan</option><option value="pengujian">Pengujian</option></select></label><label>Status<select name="status" defaultValue={editor.status}>{kolom.map((item) => <option key={item.id} value={item.id}>{item.nama}</option>)}</select></label></div>
           <label>Kategori<input name="kategori" list="kategori-tugas" required maxLength={80} defaultValue={editor.tugas?.kategori ?? (kategori !== "semua" ? kategori : "Umum")} /><datalist id="kategori-tugas">{[...new Set(proyek.tugas.map((t) => t.kategori))].map((value) => <option key={value} value={value} />)}</datalist></label>
           <label>Catatan<textarea name="catatan" rows={3} maxLength={2000} defaultValue={editor.tugas?.catatan} placeholder="Keterangan singkat (opsional)" /></label>
-          <div className="form-row"><label>Sumber<input name="sumber" maxLength={200} defaultValue={editor.tugas?.sumber} placeholder="Catatan proyek" /></label><label>Estafet (opsional)<input name="tahapEstafet" type="number" min={1} max={8} step={1} defaultValue={editor.tugas?.tahapEstafet} /></label></div>
+          <div className="form-row"><label>Sumber<input name="sumber" maxLength={200} defaultValue={editor.tugas?.sumber} placeholder="Catatan proyek" /></label><label>Estafet (opsional)<input name="tahapEstafet" type="number" min={1} max={10} step={1} defaultValue={editor.tugas?.tahapEstafet} /></label></div>
         </>}
         {error && <p role="alert" className="form-error">{error}</p>}
         <div className="form-actions"><button type="button" onClick={() => setEditor(null)}>Batal</button><button className="primary-button" type="submit">Simpan</button></div>

@@ -21,8 +21,8 @@ export function validasiData(data) {
       throw new Error(`Status atau jenis tugas tidak valid: ${tugas.id}`);
     }
     if (tugas.catatan !== undefined && typeof tugas.catatan !== "string") throw new Error("Catatan harus berupa teks.");
-    if (tugas.tahapEstafet !== undefined && (!Number.isInteger(tugas.tahapEstafet) || tugas.tahapEstafet < 1 || tugas.tahapEstafet > 8)) {
-      throw new Error("Tahap estafet harus antara 1 dan 8.");
+    if (tugas.tahapEstafet !== undefined && (!Number.isInteger(tugas.tahapEstafet) || tugas.tahapEstafet < 1 || tugas.tahapEstafet > 10)) {
+      throw new Error("Tahap estafet harus antara 1 dan 10.");
     }
   }
   return data;

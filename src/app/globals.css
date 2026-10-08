@@ -55,9 +55,9 @@ h1 { font-size: 12px; font-weight: 400; color: var(--muted); margin: 0; border-l
 .column { background: #edf0f4; border: 1px solid var(--outline); border-radius: 7px; display: flex; flex-direction: column; min-height: 0; overflow: hidden; }
 .column-heading { padding: 0 12px; min-height: 44px; display: flex; gap: 8px; align-items: center; border-bottom: 1px solid var(--outline); flex-shrink: 0; }
 .column-heading h2 { font-size: 14px; font-weight: 650; margin: 0; }
-.status-mark { width: 18px; font-size: 18px; color: var(--muted); text-align: center; }
-.dikerjakan .status-mark { color: var(--amber); }
-.selesai .status-mark { color: var(--success); }
+.status-mark { width: 9px; height: 9px; flex-shrink: 0; border-radius: 50%; background: var(--control-outline); }
+.dikerjakan .status-mark { background: var(--amber); }
+.selesai .status-mark { background: var(--success); }
 .column-count { margin-left: auto; font-size: 12px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
 .add-column { font-size: 19px; min-width: 30px; min-height: 30px; padding: 0; background: transparent; color: var(--muted); }
 .task-list { overflow-y: auto; scrollbar-width: thin; scrollbar-color: #a7b3c2 transparent; padding: 7px; flex: 1; min-height: 0; }
@@ -78,7 +78,7 @@ details[open] .expand-icon { transform: rotate(45deg); }
 .card-actions select { font-size: 11px; min-height: 29px; padding: 3px 23px 3px 7px; }
 .card-actions button { background: transparent; color: var(--primary); font-size: 11px; min-height: 29px; }
 .empty-state { padding: 40px 16px; text-align: center; color: var(--muted); }
-.empty-state>span { display: block; font-size: 24px; margin-bottom: 8px; }
+.empty-state>span { display: block; width: 12px; height: 12px; margin: 0 auto 10px; border-radius: 50%; background: var(--outline); }
 .empty-state h3 { margin: 0 0 6px; font-size: 13px; font-weight: 600; }
 .empty-state p { margin: 0 auto; max-width: 230px; font-size: 12px; line-height: 1.6; }
 footer { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; color: var(--muted); font-size: 10px; flex-shrink: 0; }
