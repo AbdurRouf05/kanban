@@ -272,7 +272,7 @@
           "jenis": "pengembangan",
           "kategori": "M9",
           "status": "dikerjakan",
-          "catatan": "Tahap perencanaan: pengamanan spesimen tanda tangan, segel dokumen, dan daftar dokumen yang dapat dicetak tiap peran.",
+          "catatan": "Fase 1 selesai: spesimen tanda tangan tidak lagi publik dan token di URL hanya membuka berkas. Berikutnya segel hash per tanda tangan, PIN, arsip PDF beku, QR verifikasi, dan PDF per peran.",
           "sumber": "docs2/RENCANA_SKEMA_KEAMANAN_DAN_KINERJA.md"
         },
         {
@@ -281,7 +281,7 @@
           "jenis": "pengembangan",
           "kategori": "M9",
           "status": "dikerjakan",
-          "catatan": "Tahap perencanaan: ukuran halaman, kueri basis data, cache, dan pengamanan data pribadi.",
+          "catatan": "Fase 1 selesai: batas tebakan kata sandi, hitungan dasbor ringan, daftar pendaftaran tanpa snapshot, indeks log alur. Berikutnya paginasi, cache klien, enkripsi berkas pribadi, rotasi refresh token.",
           "sumber": "docs2/RENCANA_SKEMA_KEAMANAN_DAN_KINERJA.md"
         },
         {
